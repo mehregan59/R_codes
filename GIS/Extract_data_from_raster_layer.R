@@ -51,7 +51,15 @@ extract_raster_data <- function(layer, points, output, rename = "No"){
 }
 
 
+#For example you can run these cods with example files after loading above function
 
+layer= "D:/GIS/test/"
+points = "D:/GIS/test/points_utm.csv"
+output = "D:/GIS/test/"
 
+#without editing column name
+extract_raster_data(layer, points, output) 
+#or with editing column name
+extract_raster_data(layer, points, output, rename = "Yes")  
 
 
